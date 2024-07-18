@@ -14,9 +14,10 @@ body {
   justify-content: center;
   flex-direction: column;
   min-height: 100vh;
+  padding: 20px; /* Adiciona um pouco de espaço ao redor */
 }
 
-img{
+img {
   width: 229px;
 }
 
@@ -49,15 +50,13 @@ input {
   margin-right: 82px;
 }
 
-.input-min::placeholder{
+.input-min::placeholder {
   color: #aec346;
 }
 
-.input-max::placeholder{
+.input-max::placeholder {
   color: #aec346;
 }
-
-
 
 button {
   background: #aec346;
@@ -72,9 +71,68 @@ button {
   border: none;
   cursor: pointer;
 }
+
 button:hover {
   opacity: 0.9;
 }
+
 button:active {
   opacity: 0.8;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+
+  input {
+    height: 50px;
+    width: 260px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  button {
+    width: 260px;
+    height: 60px;
+    font-size: 28px;
+    margin-top: 40px;
+  }
+
+  .input-min {
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+  }
+
+  input {
+    height: 40px;
+    width: 220px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  button {
+    width: 220px;
+    height: 50px;
+    font-size: 24px;
+    margin-top: 30px;
+  }
+
+  .input-min {
+    margin-right: 20px;
+    display: flex;
+    /* margin-left: 80px; */
+  }
 }
